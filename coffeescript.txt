@@ -1,0 +1,77 @@
+===================================================================
+COFFEESCRIPT
+===================================================================
+
+a programming language that compiles into javascript
+syntax derived from ruby and python
+created and maintained by jeremy ashkenas
+syntax: clean and minimal
+semicolons are not required
+parenthesis are usually not required
+curly braces are usually not required
+commas are sometimes not required
+uses indentation instead of {}
+example:
+    my_function = ->
+          alert “hello world” #take note of the indentation
+
+          creating a method
+            hello_world = ->
+                alert “hello world”
+
+                creating a method with argument
+                  sum = (first, second) ->
+                      first  + second
+
+                      creating an object
+                        bill = 
+                            name: “Mark”
+                                age: 18
+
+                                ALTERNATIVES TO COFFEESCRIPT
+                                Traceur
+                                ECMA Harmony/Narcissus
+                                Script#
+                                GWT
+                                Pyjamas
+
+                                In coffeescript, == is often replaced by ‘is’ (coffee script way)
+                                Private methods in coffee script starts with ‘_’ (underscore)
+                                the @ symbol means that it is an instance variable/method
+                                Class example:
+                                    class Value
+                                          constructor: (@number) ->
+                                              
+                                                    map: ->
+                                                            if @_is_fizzbuzz()
+
+                                                            heredoc syntax for coffeescript. use an identifier like so
+                                                            for example: name = ‘’’ this is my name ‘’’ #multiline
+
+                                                            Avoid comments as possible
+                                                            # for single line comment
+                                                            ### this is a comment ### for multiline comment
+
+                                                            Assigning multiple variables in one line
+                                                            [a, b] = [1, 2]
+                                                            also works with nested arrays
+                                                            [a, [b, c], d] = [10, [5, 5], 30]
+                                                            it also works with objects!
+                                                            { name, address } = { name: “Mark”, address: “Philippines” }
+
+                                                            Blocks in coffeescript (no curly braces required). Indentation is very important
+                                                              if condition
+                                                                  #some block
+                                                                    else
+                                                                        #another block
+
+                                                                        if, else, unless are examples of conditionals
+                                                                        you can use a one-liner
+                                                                        example: say_hello() if condition
+                                                                        there is no ternary operator in coffee script but here’s a workaround.
+                                                                        account_colour = if balance < 0 then ‘red’ else ‘black’
+
+                                                                        You can also do chained comparisons
+                                                                        (a < b < c) - this will evaluate to (a < b && b < c)
+
+                                                                        Loops
