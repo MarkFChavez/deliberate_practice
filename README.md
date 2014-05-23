@@ -68,7 +68,7 @@ belongs_to :person, counter_cache: true
 
 * The value of the subjects_count should default to 0
 
-* For belongs_to association, you can pass the option "touch" to update the owning record's updated_at timestamp. This is mostly used to invalidate the cache.
+* For belongs_to association, you can pass the option "touch" to update the owning records updated_at timestamp. This is mostly used to invalidate the cache.
 
 * You can validate an association by using the validates_associated and pass in the association object
 
